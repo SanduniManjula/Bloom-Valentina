@@ -1,0 +1,175 @@
+.home-container{
+  width: 250px;
+  padding: 20px;
+  margin-top: 40%;
+  margin-left: 10px;
+
+}
+.section {
+  width: 80%;
+  margin: auto;
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  
+}
+
+.home1-content {
+  position: absolute;
+  top: 70%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  text-align:right;
+  z-index: 2; /* Ensure content appears above the image */
+}
+.home1-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(241, 12, 184);
+ 
+}
+.home1-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.home1-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.move1-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+
+
+.background-image {
+  
+  margin-top: 60px;
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+  opacity: 0.8; /* Adjust opacity for better readability */
+  z-index: 1; /* Ensure image appears behind the content */
+}
+
+.home2-content {
+  position: relative;
+  font-size: 2rem;
+  text-align: left;
+  width: 400px;
+  margin-top: 100px; 
+  right:350px;
+  color: palevioletred;
+  border-color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/* Image Box */
+.image-box {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 10); 
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+  transform: translateY(-5px); /* Lift the image box slightly on hover */
+}
+
+.flower-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Image Overlay */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Fade-in effect */
+}
+
+.image-box:hover .image-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+
+
+
+.details {
+  text-align: center; 
+  font-size: 12px;
+  margin-left: 2px;/* Center text */
+}
+
+.title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.description {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+  background-color:  #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #367438;
+}
+
+
+.home1-content h1 {
+  animation: scale-up 0.5s ease-in-out forwards;
+}
+.home-home {
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
